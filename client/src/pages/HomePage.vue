@@ -1,17 +1,29 @@
 <script setup>
+import PlayerForm from "@/components/PlayerForm.vue";
+
+
 
 </script>
 
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <div class="home-card p-5 card align-items-center shadow rounded elevation-3">
-      <img src="@/assets/img/cw-circle-logo.png" alt="CodeWorks Logo"
-        class="rounded-circle">
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
-      </h1>
+  <section class="container-fluid">
+    <div class="row justify-content-center">
+    
+    <div class="text-center mb-3 col-12">
+      <h1>Bank!</h1>
     </div>
-  </div>
+    
+    
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="px-2 pt-3 text-center">Add your Players</h3>
+          <hr>
+          <PlayerForm/>
+        </div>
+      </div>
+    </div>
+    
+  </section>
 </template>
 
 <style scoped lang="scss">
